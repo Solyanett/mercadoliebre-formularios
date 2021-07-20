@@ -1,0 +1,58 @@
+.titulo{
+    font-weight: 700;
+
+}
+.cont--register{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.caja--register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    border: none; 
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.nombre,.usuario,.email,.domicilio,.password,.fecha{
+    border: none; 
+    border-radius: 5px;
+    margin: 15px;
+    height: 35px;
+    width: 100%;
+    
+}
+:placeholder-shown , .fecha{
+    margin: 10px;
+    padding: 10px;
+}
+.checkbox--intereses input,.perfil input{
+    margin:15px;
+
+}
+.perfil label{
+    margin-right: 30px;
+}
+.avatar--titulo, .avatar{
+    margin-top: 10px;
+}
+.enviar , .borrar{
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var( --color-celeste);
+    color:white;
+}
+.enviar{
+    margin-left: 90px;
+}
+.enviar a{
+    color: white;
+    
+}
+
+
+
+

@@ -1,0 +1,297 @@
+
+.menu{
+    display:none;
+}
+/*body*/
+
+body{
+    background-color: var(--color-grisClaro);
+    width: 100%;
+}
+
+
+    /* header*/
+
+header {
+    background-color: var(--color-amarillo);
+    width: 100%;
+    
+      
+}
+.logo{
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 40%;
+}
+.buscador{ 
+    margin-top: 10px;
+    padding: 2px;
+    width: 50%;
+    display: inline-block;
+
+}
+.buscador input{
+    width: 90%;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+}
+.buscador button{
+    position: relative;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    background-color: white;
+    color: var( --color-grisOscuro);
+    
+}
+
+.logo--buscador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.mensaje{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+.cajaMenuHamb{
+    display: flex;
+    justify-content: center; 
+}
+
+i.fa-bars{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-celeste);
+    margin: 10px auto;
+    border: none;
+    padding: 7px;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+.banner{
+    width:100%
+
+}
+   
+
+
+    /* main*/
+
+
+
+
+.titulares {
+
+    font-size: 24px; 
+    margin: 15px ;
+    color: var( --color-grisOscuro);   
+}
+
+
+ .cajaArt img{
+     width: 100%;
+     height: auto;
+     margin-bottom: 0;
+}
+ .cajaArt{
+     margin:10px 15px;
+}
+ 
+
+.descripcion{
+    background-color: white;
+    border-top: 1px solid var( --color-grisClaro);
+    position: relative;
+    padding: 10px 20px 10px; 
+}
+
+.descripcion .fa-truck{
+    display: block;
+    background-color: #FFF;
+    color: var( --color-verde);
+    border: 1px solid var(--color-verde); 
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px; 
+    border-radius: 50%; 
+    position: absolute;
+    right: 20px;
+    top:-15px
+     
+}
+.descripcion p ,span{
+    display: inline;
+}
+
+.descripcion p{
+    font-size: 18px;
+    margin-right: 5px;
+
+}
+.descripcion span{
+    color: var( --color-verde);
+   
+}
+.descripcion h4{
+    padding: 15px 0 0;
+    color: var( --color-grisOscuro);
+    opacity: 0.7; 
+}
+main h5, span {
+    font-size: 16px;
+}
+
+
+/*footer*/
+
+footer{
+    width: auto;
+    background-color: white;
+    text-align: center;
+    margin: 20px 10px 5px;  
+    
+}
+footer article{
+    padding: 20px;
+}
+footer article .copyright{
+    color: var(--color-grisOscuro);
+    
+}
+
+footer i{
+    color:var(--color-celeste);
+    
+    margin-bottom: 10px; 
+    font-size: 2em;   
+}
+.copyright{
+    text-align:left;
+    margin-top: 30px;
+}
+
+
+      /*   TABLET   */
+
+@media (min-width: 368px){
+      
+        /* header*/
+
+    .header{
+        display: flex;
+        width: 100%;
+        
+    }
+    .logo--buscador{
+        justify-content: flex-start;
+        flex-wrap:nowrap;    
+    }
+    .logo{
+        width: 25%
+    }
+    .buscador{
+        width: 35%;
+    }
+    .mensaje{
+        width: 40%;
+        margin:0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .menu{
+        display: initial;
+    }
+    .cajaMenu{
+        display: flex;
+        margin: 10px;
+        
+    }    
+
+    .cajaMenu .menu{
+        display: flex;
+        align-items: flex-end;
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    .cajaMenu .menu li{
+        list-style: none;
+        margin-right: 20px;
+       
+
+    }
+    .cajaMenuHamb{
+        display: none;
+    }
+
+
+      /*main*/
+
+    .titulares{
+        display: flex;
+    }
+        
+    .cont--product{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .cajaArt {
+        align-items: center;
+        justify-content: space-between;
+        box-shadow:
+         0px 0px 10px rgb(100, 100, 100);
+         width: 40%;
+    }
+    .cajaArt img, .descripcion{
+        width: 100%;
+    }
+   
+    
+}
+
+@media (min-width:769px){
+
+    .logo--buscador{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .buscador, .logo, .mensaje{
+        width: 30%;
+        
+    }
+    .cajaMenu .menu{
+        justify-content: space-between;
+    }
+
+    .cajaArt{
+        width: 20%;
+        justify-content: space-between;
+    }
+    .cont--product{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+
+
+    
+}
