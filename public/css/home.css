@@ -43,6 +43,7 @@ header {
     height: 30px;
     background-color: white;
     color: var( --color-grisOscuro);
+    margin-left: -20px;
     
 }
 
@@ -230,6 +231,7 @@ footer i{
     .cajaMenu .menu li{
         list-style: none;
         margin-right: 20px;
+        padding: 1px;
        
 
     }
@@ -277,7 +279,7 @@ footer i{
         
     }
     .cajaMenu .menu{
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .cajaArt{
